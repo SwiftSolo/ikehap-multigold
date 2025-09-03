@@ -122,7 +122,7 @@ const SitemapPage = () => {
           <div className="mt-16 bg-gradient-to-r from-primary-green to-emerald-700 rounded-xl p-8 text-white text-center">
             <h3 className="text-2xl font-bold mb-4">Need Help Finding Something?</h3>
             <p className="text-gray-200 mb-6 max-w-2xl mx-auto">
-              If you can't find what you're looking for, please don't hesitate to contact us. 
+              If you can&apos;t find what you&apos;re looking for, please don&apos;t hesitate to contact us. 
               Our team is here to help you navigate our services and find the information you need.
             </p>
             <Link 

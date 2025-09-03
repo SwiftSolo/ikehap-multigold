@@ -66,7 +66,7 @@ export const DynamicContactPage = dynamic(() => import('@/app/contact/page'), {
 })
 
 // Utility function for creating dynamic components with custom loading
-export const createDynamicComponent = <T extends React.ComponentType<any>>(
+export const createDynamicComponent = <T extends React.ComponentType<Record<string, unknown>>>(
   importFn: () => Promise<{ default: T }>,
   options: {
     ssr?: boolean
@@ -79,7 +79,7 @@ export const createDynamicComponent = <T extends React.ComponentType<any>>(
 }
 
 // Preload functions for better UX
-export const preloadComponent = (importFn: () => Promise<any>) => {
+export const preloadComponent = (importFn: () => Promise<{ default: React.ComponentType<Record<string, unknown>> }>) => {
   if (typeof window !== 'undefined') {
     // Preload on hover or focus
     const preload = () => {
@@ -94,9 +94,8 @@ export const preloadComponent = (importFn: () => Promise<any>) => {
 }
 
 // Intersection observer based lazy loading
-export const createIntersectionDynamic = <T extends React.ComponentType<any>>(
-  importFn: () => Promise<{ default: T }>,
-  threshold = 0.1
+export const createIntersectionDynamic = <T extends React.ComponentType<Record<string, unknown>>>(
+  importFn: () => Promise<{ default: T }>
 ) => {
   return dynamic(importFn, {
     loading: () => SmallLoadingComponent(),

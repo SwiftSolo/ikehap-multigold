@@ -12,7 +12,6 @@ import {
   Calendar,
   MapPin,
   DollarSign,
-  Users,
   Filter,
   Search
 } from 'lucide-react'
@@ -213,7 +212,7 @@ const ProjectsPage = () => {
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {filteredProjects.map((project, index) => {
+              {filteredProjects.map((project) => {
                 const Icon = project.icon
                 return (
                   <div
@@ -286,7 +285,7 @@ const ProjectsPage = () => {
             Have a <span className="text-primary-gold">Project</span> in Mind?
           </h2>
           <p className="text-xl text-gray-200 mb-8 max-w-3xl mx-auto">
-            Let's discuss how we can bring your vision to life with our expertise and proven track record.
+            Let&apos;s discuss how we can bring your vision to life with our expertise and proven track record.
           </p>
           <a
             href="/contact"

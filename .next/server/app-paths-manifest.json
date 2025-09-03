@@ -1,4 +1,11 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
-  "/page": "app/page.js"
+  "/about/page": "app/about/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/page": "app/page.js",
+  "/privacy/page": "app/privacy/page.js",
+  "/projects/page": "app/projects/page.js",
+  "/sectors/page": "app/sectors/page.js",
+  "/sitemap/page": "app/sitemap/page.js",
+  "/terms/page": "app/terms/page.js"
 }

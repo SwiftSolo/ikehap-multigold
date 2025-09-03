@@ -3,6 +3,13 @@
 import React, { useEffect, ReactNode } from 'react'
 import { registerServiceWorker, requestNotificationPermission } from '@/utils/serviceWorker'
 
+// Extend ServiceWorkerRegistration to include sync property
+interface ServiceWorkerRegistrationWithSync extends ServiceWorkerRegistration {
+  sync: {
+    register(tag: string): Promise<void>
+  }
+}
+
 interface ServiceWorkerProviderProps {
   children: ReactNode
 }
@@ -36,7 +43,7 @@ const ServiceWorkerProvider: React.FC<ServiceWorkerProviderProps> = ({ children 
       // Trigger background sync if available
       if ('serviceWorker' in navigator && 'sync' in window.ServiceWorkerRegistration.prototype) {
         navigator.serviceWorker.ready.then((registration) => {
-          return (registration as any).sync.register('contact-form')
+          return (registration as ServiceWorkerRegistrationWithSync).sync.register('contact-form')
         }).catch((error) => {
           console.error('Background sync registration failed:', error)
         })

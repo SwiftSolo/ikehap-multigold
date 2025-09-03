@@ -113,7 +113,7 @@ const ContactPage = () => {
               Get in <span className="text-primary-gold">Touch</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto">
-              Ready to Start Your Next Project? Let's Connect and Explore Opportunities
+              Ready to Start Your Next Project? Let&apos;s Connect and Explore Opportunities
             </p>
           </div>
         </div>
@@ -154,7 +154,7 @@ const ContactPage = () => {
                   Send us a <span className="text-primary-gold">Message</span>
                 </h2>
                 <p className="text-gray-600">
-                  Fill out the form below and we'll get back to you within 24 hours.
+                  Fill out the form below and we&apos;ll get back to you within 24 hours.
                 </p>
               </div>
 
@@ -162,7 +162,7 @@ const ContactPage = () => {
                 <div className="text-center py-12">
                   <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
                   <h3 className="text-2xl font-bold text-text-dark mb-2">Message Sent!</h3>
-                  <p className="text-gray-600">Thank you for contacting us. We'll respond within 24 hours.</p>
+                  <p className="text-gray-600">Thank you for contacting us. We&apos;ll respond within 24 hours.</p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
@@ -350,7 +350,7 @@ const ContactPage = () => {
               <div className="bg-gradient-to-br from-primary-green to-primary-green/90 rounded-2xl p-8 text-white">
                 <h3 className="text-2xl font-bold mb-4">Need Immediate Assistance?</h3>
                 <p className="text-gray-200 mb-6">
-                  For urgent matters or immediate assistance, don't hesitate to call us directly.
+                  For urgent matters or immediate assistance, don&apos;t hesitate to call us directly.
                 </p>
                 <div className="space-y-3">
                   <div className="flex items-center">

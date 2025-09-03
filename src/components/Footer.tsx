@@ -39,8 +39,8 @@ const Footer = () => {
 
   const sectors = [
     { href: '/sectors#real-estate', label: 'Real Estate' },
-    { href: '/sectors#fashion-retail', label: 'Fashion & Retail' },
-    { href: '/sectors#oil-gas', label: 'Oil & Gas' },
+    { href: '/sectors#fashion-retail', label: 'Fashion &amp; Retail' },
+    { href: '/sectors#oil-gas', label: 'Oil &amp; Gas' },
     { href: '/sectors#automotive', label: 'Automotive' },
     { href: '/sectors#transportation', label: 'Transportation' },
     { href: '/sectors#construction', label: 'Construction' },

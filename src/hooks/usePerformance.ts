@@ -2,6 +2,15 @@
 
 import { useEffect, useState } from 'react'
 
+// Extend Performance interface to include memory property (Chrome-specific)
+interface PerformanceWithMemory extends Performance {
+  memory?: {
+    usedJSHeapSize: number
+    totalJSHeapSize: number
+    jsHeapSizeLimit: number
+  }
+}
+
 interface PerformanceMetrics {
   loadTime: number
   renderTime: number
@@ -24,7 +33,7 @@ export const usePerformance = () => {
         const renderTime = performance.now() - renderStart
         
         // Get memory usage if available
-        const memoryUsage = (performance as any).memory?.usedJSHeapSize
+        const memoryUsage = (performance as PerformanceWithMemory).memory?.usedJSHeapSize
 
         setMetrics({
           loadTime,

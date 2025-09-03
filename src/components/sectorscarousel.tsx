@@ -45,7 +45,7 @@ const SectorsCarousel = () => {
     {
       icon: Fuel,
       title: 'Oil & Gas',
-      description: 'Energy sector operations and petroleum services contributing to Nigeria\'s energy security',
+      description: 'Energy sector operations and petroleum services contributing to Nigeria&apos;s energy security',
       color: 'from-orange-500 to-orange-600',
       features: ['Upstream Operations', 'Downstream Services', 'Distribution', 'Infrastructure']
     },
@@ -171,10 +171,7 @@ const SectorsCarousel = () => {
     setIsAutoPlaying(!isAutoPlaying)
   }
 
-  const getCurrentSlideItems = () => {
-    const startIndex = currentSlide * currentItemsPerSlide
-    return sectors.slice(startIndex, startIndex + currentItemsPerSlide)
-  }
+
 
   return (
     <section id="sectors-carousel" ref={sectionRef} className="py-20 bg-gradient-to-br from-gray-50 to-white">

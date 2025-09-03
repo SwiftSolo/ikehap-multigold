@@ -17,7 +17,7 @@ import {
 
 const SectorsPreview = () => {
   const [isVisible, setIsVisible] = useState(false)
-  const [hoveredSector, setHoveredSector] = useState<number | null>(null)
+
   const sectionRef = useRef<HTMLElement>(null)
 
   useEffect(() => {
@@ -127,8 +127,7 @@ const SectorsPreview = () => {
                     : 'translate-y-10 opacity-0'
                 } hover:scale-105`}
                 style={{ transitionDelay: `${index * 100}ms` }}
-                onMouseEnter={() => setHoveredSector(index)}
-                onMouseLeave={() => setHoveredSector(null)}
+                
               >
                 {/* Background Gradient */}
                 <div
@@ -173,7 +172,7 @@ const SectorsPreview = () => {
               Ready to Explore Our Divisions?
             </h3>
             <p className="text-xl mb-8 text-green-100">
-              Discover how we're driving innovation across industries.
+              Discover how we&apos;re driving innovation across industries.
             </p>
             <Link
               href="/sectors"

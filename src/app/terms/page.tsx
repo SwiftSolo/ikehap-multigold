@@ -49,8 +49,8 @@ const TermsPage = () => {
                 <h2 className="text-2xl font-bold text-primary-green">Introduction</h2>
               </div>
               <p className="text-gray-700 leading-relaxed mb-4">
-                Welcome to Ikehap Multigold Limited. These Terms of Service ("Terms") govern your use of our website, 
-                services, and any related applications or platforms operated by Ikehap Multigold Limited ("Company", "we", "us", or "our").
+                Welcome to Ikehap Multigold Limited. These Terms of Service (&quot;Terms&quot;) govern your use of our website, 
+                services, and any related applications or platforms operated by Ikehap Multigold Limited (&quot;Company&quot;, &quot;we&quot;, &quot;us&quot;, or &quot;our&quot;).
               </p>
               <p className="text-gray-700 leading-relaxed">
                 By accessing or using our services, you agree to be bound by these Terms. If you disagree with any part 
@@ -74,7 +74,7 @@ const TermsPage = () => {
             <div className="bg-white rounded-xl shadow-lg p-8 mb-8">
               <h3 className="text-xl font-bold text-primary-green mb-4">2. Use License</h3>
               <p className="text-gray-700 leading-relaxed mb-4">
-                Permission is granted to temporarily download one copy of the materials on Ikehap Multigold Limited's 
+                Permission is granted to temporarily download one copy of the materials on Ikehap Multigold Limited&apos;s 
                 website for personal, non-commercial transitory viewing only.
               </p>
               <div className="bg-gray-50 p-4 rounded-lg mb-4">

@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect } from 'react'
+// useEffect import removed as it was unused
 import Link from 'next/link'
 import Image from 'next/image'
 import { Menu, X, Sun, Moon } from 'lucide-react'
